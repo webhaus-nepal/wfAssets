@@ -306,9 +306,9 @@
 	.lineButton__dark{
 		border: 1px solid #29292b !important;
 	}
-}
 .newsEventsBody .wf-mediaAnnouncements_whiteCol, .newsEventsBody .wf-mediaAnnouncements__redCol, .newsEventsBody .wf-mediaAnnouncements__imageCol{
 	height:auto;
+}
 }
 /*End for mobile */
 
