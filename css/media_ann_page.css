@@ -138,6 +138,7 @@ margin-bottom: 26px; color: #29292b;}
 .dateTo__col{width:48%; float:right;}
 .wf-calendar__Body.wf-search_body .calendarRow .row {
     margin-bottom: 58px;
+
 }
 .wf-calendar__Body.wf-search_body .lineButton__dark{line-height:14px;}
 .wf-calendar__Body.wf-search_body .media-readmoreBtn{
@@ -168,8 +169,15 @@ margin-bottom: 26px; color: #29292b;}
 	.wf-calendar__Body.wf-search_body .dateFrom__col, .wf-calendar__Body.wf-search_body .dateTo__col {
     float: none;
     width: 100%;
-}
-.wf-calendar__Body.wf-search_body .media-search-form .yearSelect{float:right;}
+    }
+    .wf-calendar__Body.wf-search_body .media-search-form .yearSelect{
+        float:right;
+    }
+    .wf-calendar__Body.wf-search_body .calendarRow .row {
+        margin-bottom: 275px;
+    }
+    .wf-search_body .about-wrapper{margin:0 0 85px;}
+    .wf-search_body #resultsList li:first-child{border:1px solid #d0d0d0 ;}
 }
 /********************************************************************************************************************************Fixes End Bugs***/
 @media screen and (max-width: 39.9375em) {
