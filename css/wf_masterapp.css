@@ -876,6 +876,7 @@ height:80px;
     width: 50px;
     left: 50%;
     margin-left: -25px;
+    background-color: red;
 }
 .sc .arrow_scrollDown a{
 	display:inline-block;
