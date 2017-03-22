@@ -1039,6 +1039,7 @@ a.lineButton__dark.acc_expand-all:hover {
 }
 .lftLogoBlock-textBody img{
 	width:290px;
+	margin-left:-8px;
 }
 .wf-footLogoGroup img:first-child{
 	width:169px;

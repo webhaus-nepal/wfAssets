@@ -129,6 +129,36 @@ margin-bottom: 26px; color: #29292b;}
 .keywordSearch__row input{
     background: #f2f2f2;
 }
+/********************************************************************************************************************************Fixes New Bugs***/
+.wf-search_body .about-intro-text h1{margin:0 0 20px;}
+.wf-search_body .about-intro-text p{line-height:26px;}
+.wf-calendar__Body.wf-search_body .about-intro-text{margin:0 0 44px;}
+.date__holder{max-width:390px; width:100%;}
+.dateFrom__col{width:48%; float:left;}
+.dateTo__col{width:48%; float:right;}
+.wf-calendar__Body.wf-search_body .calendarRow .row {
+    margin-bottom: 58px;
+}
+.wf-calendar__Body.wf-search_body .lineButton__dark{line-height:14px;}
+.wf-calendar__Body.wf-search_body .media-readmoreBtn{bottom:26px;}
+/********************************************************************************************************************************Responsive Bugs***/
+@media screen and (max-width: 1024px) {
+	.wf-calendar__Body.wf-search_body .media-search-form .monthSelect, .wf-calendar__Body.wf-search_body .media-search-form .yearSelect{
+		width:48%;
+	}
+	.wf-calendar__Body .wf-pNewsBlock {
+    top: 0;
+}
+	}
+@media screen and (max-width: 640px) {
+	.wf-calendar__Body.wf-search_body .media-search-form input, .wf-calendar__Body.wf-search_body .date__holder{max-width:100%;}
+	.wf-calendar__Body.wf-search_body .dateFrom__col, .wf-calendar__Body.wf-search_body .dateTo__col {
+    float: none;
+    width: 100%;
+}
+.wf-calendar__Body.wf-search_body .media-search-form .yearSelect{float:right;}
+}
+/********************************************************************************************************************************Fixes End Bugs***/
 @media screen and (max-width: 39.9375em) {
     .wf-mediaBodyExpand {
     
