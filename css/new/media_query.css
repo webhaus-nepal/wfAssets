@@ -1,0 +1,447 @@
+
+
+/*-- All the media queries start here. Media Queries consists of six views including
+one for iPhone 5 that needs aspect ratio configuration --*/
+/*-----Krishna added css -------*/
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+.largeDevice, .wf-megaHeader {
+	display: none;
+}
+.js #menu {
+	display: none;
+}
+.js .slicknav_menu {
+	display: block;
+}  
+.wf-mid-col {
+        margin: 0 0 40px 0px;
+}
+.wf-card-body {
+    height: auto !important;
+}
+.news-parent-block {
+    left: 50%;
+    bottom: 10px;
+    width: 128px;
+    margin-left: -64px;
+}
+.news-parent-block > a {
+    display: inline-block;
+    margin: 1rem 0;
+}
+.news-parent-block > a.news-parent-arrowup, .news-parent-block > a.news-parent-arrowdown{
+	    transform: rotate(-90deg);
+}
+}
+/* iPhone 5 Device aspect ratio -- same as small */
+@media screen and (device-aspect-ratio: 40/71) {
+.largeDevice, .wf-megaHeader, .rightLogoBlock {
+	display: none;
+}
+.js #menu {
+	display: none;
+}
+.js .slicknav_menu {
+	display: block;
+}
+}
+@media screen and (min-width: 40em) {
+.news-parent-block  {
+  left: 25px;
+  top: 165px;
+}
+}
+
+/* Custom media query for tablet */
+@media screen and (min-width:640px) and (max-width:991px){
+.wf-pNewsThreeCol .wf-card-body {
+    height: 180px !important;
+}
+.wf-pNewsThreeCol .wf-card-button{
+	    padding: 0.7rem 1rem !important;
+}
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+.largeDevice, .wf-megaHeader {
+	display: none;
+}
+.js #menu {
+	display: none;
+}
+.js .slicknav_menu {
+	display: block;
+}
+.wf-card-body-headings h2, .wf-card-body-description, .wf-card-button{
+	font-size: 72%;
+}
+.wf-card-body-description{
+	display: none;
+}
+.wf-card-body-description {
+	padding: 0;
+}
+.wf-card-body{
+	height: 135px;
+}
+}
+/* Small and medium only */
+@media screen and (max-width: 63.9375em) {
+	.sc .bx-controls, .rightLogoBlock{
+		display:none;
+	}
+.leftLogoBlock {
+	top:0;
+	bottom:0;
+	width:100%;
+	left:0;
+}
+.sliderOverlay-text{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	height:100%;
+}
+.sliderOverlay-text .lftLogoBlock-Row{
+	display:table-row;
+}
+.sliderOverlay-text .lftLogoBlock-Row .lftLogoBlock-text{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.wf-aboutSlider .bx-controls {
+    bottom: 60px;
+	width:100%;
+}
+.wf-aboutSlider .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 5px;
+    height: 10px;
+    margin: 0 3px;
+}
+
+.sc{
+    height:100vh;
+    width:100%;
+	margin-bottom: 60px;
+}
+.sc .bx-wrapper, .sc .bx-wrapper .bx-viewport, .sc .bx-wrapper .bx-viewport .bxslider, .sc .bx-wrapper .bx-viewport .bxslider > li, .slide-picture{
+    height:100% !important;
+    width:100% !important;
+}
+}
+/* Large and up */
+@media screen and (min-width: 64em) {
+.wf-mobileHeader, .wf-megaHeader .lg-logo-branding {
+	display: none;
+}
+.wf-megaHeader.header-fix .lg-logo-branding {
+	display: block;
+}
+.leftLogoBlock{
+  top:40%;
+  left: 36px;
+}
+.lftLogoBlock-textBody{
+    width: 290px;
+    display: inline-block;
+    text-align: left;
+}
+.wf-aboutSlider .bx-controls {
+    top: 50%;
+	left:38px;
+}
+.sc .slide-picture{
+    height:820px;
+}
+.wf-card-block:hover .wf-card-body {
+    bottom:0px;
+    height: 250px;
+}
+.wf-pNewsTwoCol .wf-card-block:hover .wf-card-body {
+    bottom:0px;
+    height: 226px;
+}
+.wf-card-block:hover{
+    cursor: pointer;
+    border: 3px solid #29292b;
+}
+.wf-card-block {
+    border: 3px solid transparent;    
+}
+}
+ @media screen and (max-width: 40em) {
+}
+/*-----end of krishna added css -------*/
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+.wf-whiteExpand {
+	padding: 0 10px 60px;
+}
+.wf-pNewsExpand, .wf-footExpand {
+	padding: 0 20px;
+}
+.wf-pNewsTwoCol__col {
+	width: auto !important;
+	float: none !important;
+	margin: 0 auto 40px auto;
+}
+.wf-pNewsThreeCol__col {
+	width: auto !important;
+	float: none !important;
+	margin: 0 auto 40px auto;
+}
+.wf-footerBlock {
+	padding: 30px 0 40px !important;
+}
+.wf-footLogoGroup {
+	width: 40%;
+}
+.wf-footLinkBlock {
+	margin: 0 0 0 58%;
+}
+.wf-footerBlock .float-right {
+	float: none !important;
+	display: block !important;
+}
+.wf-footStock {
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	text-align: left;
+}
+.wf-footLinkBlock .columns {
+	width: 100% !important;
+}
+.wf-footLinkBlock ul li {
+	line-height: 26px;
+}
+.wf-footMainLink a {
+	font-size: 80% !important;
+}
+.wf-footOtherLink a, .wf-footStockBlock__text {
+	font-size: 60% !important;
+}
+.wf-copyRight {
+	font-size: 70% !important
+}
+.wf-aboutCaroWrapper {
+	padding-top: 80px;
+}
+.wf-aboutSlider p {
+	width: 90%;
+	font-size: 27px;
+}
+.wf-slideText {
+	width: 100% !important;
+	height: 490px !important;
+}
+.wf-news-container {
+	width: auto;
+}
+.img-container {
+	display: none;
+}
+.wf-slideImage {
+	display: none;
+}
+.news-parent .float-left {
+	float: none !important
+}
+.news-parent {
+	padding-top: 70px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 0;
+	text-align: center;
+	width: auto;
+}
+.news-parent h2 {
+	font-family: 'flamamedium';
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.news-parent p {
+	font-family: 'flamamedium';
+	font-size: 28px;
+	padding-top: 25px;
+	padding-bottom: 57px;
+	width: auto;
+	line-height: 30px;
+	color: #29292b;
+}
+/*Kshitiz's part*/
+.wf-card-body-description{
+	display: none;
+	padding-bottom: 1rem;
+}
+.wf-card-body-headings{
+	padding-bottom: 1rem;
+}
+
+.wf-card-block:hover{
+    cursor: pointer;
+    border: none;
+}
+}
+
+/* iPhone 5 Device aspect ratio -- same as small */
+@media screen and (device-aspect-ratio: 40/71) {
+.wf-whiteExpand {
+	padding: 0 10px 60px;
+}
+.wf-pNewsExpand, .wf-footExpand {
+	padding: 0 10px;
+}
+.wf-footMainLink a {
+	font-size: 60% !important;
+}
+.wf-footOtherLink a, .wf-footStockBlock__text {
+	font-size: 60% !important;
+}
+.wf-copyRight {
+	font-size: 8px !important
+}
+.wf-slideText {
+	width: 100% !important;
+	height: 440px !important;
+}
+.wf-slideImage {
+	display: none;
+}
+}
+
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+.wf-whiteExpand {
+	padding: 0 30px 95px;
+}
+.wf-pNewsExpand, .wf-footExpand {
+	padding: 0 30px;
+}
+.wf-pNewsTwoCol__col {
+	width: 49%;
+	margin: 0 auto 65px auto;
+}
+.wf-pNewsThreeCol__col {
+	width: 32.5% !important;
+	margin: 0 auto 65px auto;
+}
+.wf-footLogoGroup {
+	width: 200px;
+}
+.wf-footLinkBlock {
+	margin: 0 135px 0 210px;
+}
+.wf-footLinkBlock .columns {
+	width: 49% !important;
+}
+.wf-footMainLink a {
+	font-size: 80%;
+}
+.wf-footOtherLink a, .wf-copyRight, .wf-footStockBlock__text {
+	font-size: 80%;
+}
+.wf-slideText {
+	width: 58% !important;
+	height: 440px !important;
+}
+.wf-slideImage {
+	width: 42% !important;
+	height: 440px !important;
+}
+
+		.wf-card-header{
+			height: 72%;
+		}
+}
+
+
+
+
+/* Large only  -- 1024 to 1280px -- same as medium in our case */
+@media screen and (min-width: 64em) and (max-width: 80em) {
+.wf-whiteExpand {
+	padding: 0 30px 95px;
+}
+.wf-pNewsExpand, .wf-footExpand {
+	padding: 0 30px;
+}
+.wf-pNewsTwoCol__col {
+	width: 49%;
+	margin: 0 auto 65px auto;
+}
+.wf-pNewsThreeCol__col {
+	width: 32.5% !important;
+	margin: 0 auto 65px auto;
+}
+.wf-footLinkBlock .columns {
+	width: 49% !important;
+}
+.wf-slideText {
+	width: 58% !important;
+	height: 440px !important;
+}
+.wf-slideImage {
+	width: 42% !important;
+	height: 440px !important;
+}
+	.wf-card-body-header{
+		height: 396px;
+	}
+	.wf-card-header{
+		height: 72%;
+	}
+	
+.sc .slide-picture{
+    height:530px;
+}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+}
+@media screen and (min-width: 640px) and (max-width: 680px) {
+
+.wf-footerBlock {
+    padding: 20px 0 40px !important;
+}
+.wf-footLogoGroup {
+    width: 40%;
+}
+.wf-footLinkBlock {
+    margin: 0 0 0 58%;
+}
+.wf-footerBlock .float-right {
+    float: none !important;
+    display: block !important;
+}
+.wf-footStock {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    text-align: left;
+}
+.wf-footLinkBlock .columns {
+    width: 100% !important;
+}
+.wf-footLinkBlock ul li {
+    line-height: 26px;
+}
+.wf-footMainLink a {
+    font-size: 80% !important;
+}
+.wf-footOtherLink a, .wf-footStockBlock__text {
+    font-size: 60% !important;
+}
+.wf-copyRight {
+    font-size: 70% !important
+}
+
+
+
+}

@@ -1,0 +1,138 @@
+.media-search-form .monthSelect, .media-search-form .yearSelect {
+	width: 48%;
+	background-color: #f2f2f2 !important;
+	color: #686d6f;
+	font: 14px/22px "flamabasic", "roboto", helvetica;
+	background-image: url(../images/select-down-arrow.png);
+	background-size: 13px 7px;
+}
+.media-search-form input {
+	color: #686d6f;
+	font: 14px/22px "flamabasic", "roboto", helvetica;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	background: #f2f2f2 url(../images/mediaSearch.svg) 100% 50% no-repeat;
+	background-size: 30px 20px;
+}
+.media-search-form label {
+	color: #29292b;
+	font: 12px/22px "flamabasic", "roboto", helvetica;
+	text-transform: uppercase;
+}
+.media-search-form .dateTo__col {
+	padding-right: 0;
+}
+.media-search-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ color: #686d6f;
+ opacity:1;
+}
+ .media-search-form ::-moz-placeholder { /* Firefox 19+ */
+ color: #686d6f;
+ opacity:1;
+}
+.media-search-form :-ms-input-placeholder { /* IE 10+ */
+ color: #686d6f;
+ opacity:1;
+}
+.media-search-form :-moz-placeholder { /* Firefox 18- */
+ color: #686d6f;
+ opacity:1;
+}
+.btn-loadmore {
+    background: rgba(0, 0, 0, 0) url("../images/loadmore.svg") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 95px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -999px;
+    top: -145px;
+    width: 95px;
+    z-index: 999;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+}
+.calendarRow .row{margin-bottom:80px;}
+/* min-width 641px and max-width Tablet*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+.media-search-form .dateTo__col {
+	padding-left: 0;
+}
+.media-search-form .monthSelect, .media-search-form .yearSelect {
+	width: 49%;
+	background-color: #f2f2f2 !important;
+	color: #686d6f;
+	font: 14px/22px "flamabasic", "roboto", helvetica;
+}
+.media-search-form .yearSelect {
+	float: right;
+}
+}
+ /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 39.9375em) {
+.media-search-form .monthSelect, .media-search-form .yearSelect {
+	width: 49%;
+	background-color: #f2f2f2 !important;
+	color: #686d6f;
+	font: 14px/22px "flamabasic", "roboto", helvetica;
+}
+.media-search-form .yearSelect {
+	float: right;
+}
+.media-search-form .dateTo__col {
+	padding-left: 0;
+}
+.wf-calendar__Body .wf-whiteAboutExpand.expanded {
+	padding: 30px 30px 32px;
+}
+.calendarRow ul.row.wf-mediaAnnouncements__Blocks.mediaAndsearch__Blocks {
+	margin: 0;
+}
+.wf-calendar__Body .mb-scroll-top {
+	height: 84px;
+	left: auto;
+	margin-left: 0;
+	position: absolute;
+	right: 0 !important;
+	top: -245px;
+	width: 83px;
+	margin-right: 25px;
+}
+.wf-calendar__Body .wf-mediaAnnouncements__redCol .media-readmoreBtn:hover {
+	color: #29292b!important;
+	border: 1px solid #29292b !important;
+}
+.wf-calendar__Body .wf-mediaAnnouncements__redCol:hover .lineButton__dark {
+	border: 1px solid #29292b !important;
+	color: #000000 !important;
+}
+.btn-loadmore {
+	background: rgba(0, 0, 0, 0) url("../images/loadmore.svg") no-repeat scroll 0 0;
+	display: inline-block;
+	height: 140px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -999px;
+	top: -245px;
+	width: 125px;
+	z-index: 999;
+	transform:translateX(0%);
+	-webkit-transform:translateX(0%);
+}
+.calendarRow .row{margin-bottom:302px;}
+}
+ @media only screen and (min-width:640px) and (max-width:933px) {
+}
+@media only screen and (min-width: 1024px) and (max-width: 1105px) {
+}
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+.wf-mobileHeader.slicknav_black .slicknav_btn, .slicknav_btn {
+	right: 0;
+}
+.wf-mediaAnnouncements_whiteCol, .wf-mediaAnnouncements__redCol, .imageDescriptions__Block {
+	padding: 33px 15px 27px !important;
+}
+}

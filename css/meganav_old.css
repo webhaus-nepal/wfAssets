@@ -1,0 +1,355 @@
+/* mini reset */
+.nav,
+.nav a,
+.nav form,
+.nav input,
+.nav li,
+.nav ul {
+border: none;
+margin: 0;
+padding: 0;
+}
+.nav a {
+text-decoration: none;
+}
+.nav li {
+list-style: none;
+}
+
+/* menu container */
+
+.nav {
+cursor: default;
+display: inline-block;
+
+z-index: 500;
+}
+
+/* menu list */
+.nav > li {
+float: left;
+}
+/*-----Krishna added css for mega menu -------*/
+.nav > li {
+    padding:0 1rem;
+	border-left: 2px solid #29292b;
+}
+.index-page .nav > li {
+	border-left: 2px solid #fff;
+}
+.nav > li:first-child{
+	border-left:none;
+}
+.nav > li > a{
+	position: relative;
+}
+.nav > li > a:after{
+	position:absolute;
+	content:'';
+	height:2px;
+	width:100%;
+	background-color:transparent;
+	bottom:-5px;
+	left:0;
+}
+.nav > li > a:focus:after, .nav > li > a:hover:after, .nav > li.active > a:after {
+    background-color: #e13022;
+}
+.nav > li:hover > a {
+	border-bottom: 1px solid #e13022;
+}
+.nav > li > a {
+border-bottom:none !important;
+line-height: 14px;
+
+}
+/* menu links */
+/* about_main menu css */
+.vg-topNav__link > li > a{
+
+
+}
+.index-page .nav > li > a, .index-page .vg-topNav__link > li > a{
+	color: #fff;
+}
+.nav > li > a {
+color: #29292b;
+text-transform: uppercase ;
+display: block;
+font-weight: bold;
+font-size: 13px;
+font-family: 'flamamedium', 'roboto', helvetica;
+border-bottom: 3px solid rgba(255,255,255, 0);
+position: relative;
+/*transition: all .3s ease;*/
+animation-name: slideDown;
+animation-duration: 1s;
+z-index: 510;
+
+}
+
+
+/*.nav > li > a:focus,
+.nav > li:hover > a {
+	border-bottom: 3px solid #000;
+}*/
+.nav > li:first-child > a {
+}
+
+.mainLi {
+
+}
+/*-----Krishna added css for mega menu -------*/
+
+/* menu dropdown */
+/*.mega-menu {
+background: #29292b;
+opacity: 0;
+position: absolute;
+top:47px;
+right: 0px !important;
+transition: all .3s ease .15s;
+visibility: hidden;
+padding: 35px !important;
+width: 1440px !important;
+font-family: 'flamamedium';
+
+}*/
+.mega-menu {
+background: #29292b;
+opacity: 1;
+position: absolute;
+top:0px;
+right: 0px !important;
+/*transition: top 1s ease .15s;*/
+visibility: hidden;
+padding: 35px !important;
+width:100%;
+font-family: 'flamamedium';
+left:0;
+height: 475px;
+border-bottom: 15px solid #ccc;
+}
+
+
+.mega-menu-active{
+	animation-name: slideDownMenu;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+}
+
+
+@keyframes slideDownMenu{
+	from{ top: -200px;opacity:0;} to {top: 0px;opacity: 1}
+
+}
+
+@keyframes slideDown{
+from{ top: -40px;} to {top: 0px;}
+
+}
+
+a.cd-nav-trigger:hover .mega-menu{
+	top:400px;
+
+}
+
+.mega-menu h4{
+	font-size: 16px !important;
+}
+/*-----Krishna added css for mega menu -------*/
+
+/*.mega-menu h5, .mega-menu h4{
+	border-bottom: 1px solid #58585a; line-height: 30px;
+	display: block;
+}*/
+.mega-menu h5, .mega-menu h4{
+	border-bottom: 1px solid #58585a; 
+	line-height: 30px;
+	display: block;
+	font-family: 'flamamedium', 'roboto', helvetica;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.mega-menu img{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.margg{
+	margin-top: 10px !important;
+}
+
+.mega-menu ul{
+}
+
+.mega-menu ul li a{
+	color: #f4f4f5;
+	line-height:22px;
+	font-size: 12px;
+	text-transform:uppercase;
+	margin-top: 8px;
+	border-bottom:1px solid #29292b;
+	font-family: 'flamabasic', 'roboto', helvetica;
+
+}
+/*-----Krishna added css for mega menu -------*/
+/*.mega-menu ul li a:hover{
+	color: #ffffff;
+		border-bottom:1px solid red;
+
+}*/
+.mega-menu ul li a{
+	position:relative;
+
+}
+.mega-menu ul li a:after{
+	position:absolute;
+	content:'';
+	height:2px;
+	width:100%;
+	background-color:transparent;
+	bottom:-2px;
+	left:0;
+}
+.mega-menu ul li a:focus:after, .mega-menu ul li a:hover:after{
+	background-color:#e13022;
+}
+
+
+
+
+
+.mega-menu2 {
+background: #fff;
+border: 1px solid #ddd;
+opacity: 0;
+position: absolute;
+top:47px;
+transition: all .3s ease .15s;
+visibility: hidden;
+padding: 35px !important;
+width: 610px;
+right: 116px !important;
+}
+
+.mega-menu2 h4{
+	font-size: 16px !important;
+}
+.mega-menu2 h5, .mega-menu2 h4{
+	border-bottom: 1px solid #58585a; line-height: 30px;
+	display: block;
+}
+
+.mega-menu2 img{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.margg{
+	margin-top: 10px !important;
+}
+
+.mega-menu2 ul{
+}
+
+.mega-menu2 ul li a{
+	color: rgb(87, 88, 90);
+	line-height: 25px;
+	font-size: 15px;
+	display: block;
+	margin-top: 5px;
+border-bottom:1px solid #fff;
+
+}
+
+.mega-menu2 ul li a:hover{
+	color: rgb(0,0,0);
+		border-bottom:1px solid #000;
+
+}
+
+.parentMenu{
+	height: 60px;
+}
+
+
+
+
+.mega-menu3 {
+background: #fff;
+border: 1px solid #ddd;
+opacity: 0;
+position: absolute;
+top:47px;
+transition: all .3s ease .15s;
+visibility: hidden;
+padding: 35px !important;
+width: 360px;
+right: 370px !important;
+}
+
+.mega-menu3 h4{
+	font-size: 16px !important;
+}
+.mega-menu3 h5, .mega-menu3 h4{
+	border-bottom: 1px solid #58585a; line-height: 30px;
+	display: block;
+}
+
+.mega-menu3 img{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.margg{
+	margin-top: 10px !important;
+}
+
+.mega-menu3 ul{
+}
+
+.mega-menu3 ul li a{
+	color: rgb(87, 88, 90);
+	line-height: 25px;
+	font-size: 15px;
+	display: block;
+	margin-top: 5px;
+
+border-bottom:1px solid #fff;
+
+}
+
+.mega-menu3 ul li a:hover{
+	color: rgb(0,0,0);
+		border-bottom:1px solid #000;
+
+}
+
+
+li:hover > .mega-menu {
+opacity: 1;
+overflow: visible;
+visibility: visible;
+
+}
+
+li:hover > .mega-menu2 {
+opacity: 1;
+overflow: visible;
+visibility: visible;
+
+}
+
+
+li:hover > .mega-menu3 {
+opacity: 1;
+overflow: visible;
+visibility: visible;
+
+}
+
+/* menu content */

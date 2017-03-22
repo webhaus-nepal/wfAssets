@@ -1,0 +1,448 @@
+.page-bottom-border{
+    position: fixed; height: 15px; background: #ccc; 
+    bottom: 0; left: 0; width: 100%; z-index: 99999;
+}
+
+.page-top-border{
+     position: fixed; height: 15px; background: #ccc; 
+     top: 0; left: 0; width: 100%; z-index: 99999;
+   
+}
+
+
+
+/*-- about hero section --*/
+.page-deep-hero{
+    padding-top:90px;
+    position: relative;
+    background-color: #fff;
+}
+.about-hero .image-item{
+   height: 550px;
+}
+
+    .page-deep-hero-info {
+        position: absolute;
+        top: 240px;
+        left: 40px;
+        z-index: 99;
+        color: #fff;
+            width: 385px;
+
+    }
+    .page-deep-hero-info a{
+        color: #ffffff;
+    }
+    .page-deep-hero-info h1{
+        text-transform: uppercase;
+        font-family: 'flamamedium', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+
+    }
+
+    .page-deep-hero-info p{
+        font-family: 'flamalight', Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        line-height: 36px;
+        
+    }
+
+    .heroLogoBlock {
+  position: absolute;
+ right: 40px;
+    bottom: 13px;
+  width: 150px;
+  text-align: right;
+    z-index: 9999;
+}
+.heroLogoBlock img{
+  display: block;
+  float: right;
+  clear: right;
+
+}
+
+.heroLogoBlock p{
+  display: block;
+  color: #ffffff;
+  font-family: 'flamamedium';
+  font-size: 14px;
+  clear: both;
+  margin-top: 10px;
+
+}
+
+.aboutRow .wf-card-body {
+	padding: 11px 20px;
+}
+
+
+
+
+
+/*-- Main about body section --*/
+.wf-whiteAboutExpand {
+    background: #ffffff;
+    padding: 30px 60px 170px 40px;
+    
+}
+    .breadcrumbs li {
+        
+        font-size: 12px !important;
+       font-family: 'flamabasic';
+       color:#999 !important;
+           margin-right: -19px !important;
+   }
+   
+   .CMSBreadCrumbsCurrentItem, .CMSBreadCrumbsLink{
+	   font-size: 12px !important;
+       font-family: 'flamabasic';
+       color:#999 !important;
+   }
+   
+   .breadcrumbs a{
+       color:#999 !important;
+
+   }
+   .breadcrumbs a:hover{
+       text-decoration: none !important;
+   }
+
+   .breadcrumbs li:not(:last-child)::after {
+       font-family: 'westfield', Arial, Helvetica, sans-serif !important;
+        color: #999;
+        content: "" !important;
+
+
+   }
+    
+    .CMSBreadCrumbsCurrentItem, .CMSBreadCrumbsLink{
+		padding-left: 7px;
+		 text-transform: uppercase;
+	}
+	
+    .CMSBreadCrumbsCurrentItem, .breadcrumbs li:last-child {
+        font-family: 'flamamedium', Arial, Helvetica, sans-serif !important;
+        color: #29292b !important;
+
+    }
+
+
+    /*-- about wrapper--*/
+    .about-wrapper{
+        padding-top: 20px;
+
+    }
+    .about-wrapper:before, .about-wrapper:after{
+        display: table;
+        content: '';
+        clear: both;
+    }
+
+        .about-left-nav{
+            width: 325px;
+        }
+
+        .about-left-nav a {
+            color: #29292b !important;
+            line-height: 35px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: 'flamabasic', Arial, Helvetica, sans-serif
+
+
+        }
+
+        .about-left-nav a:hover, .about-left-nav a.active {
+            color: #29292b !important;
+            border-bottom: 2px solid #e23120;
+        }
+
+
+
+
+
+
+    .about-intro-text p{
+        font-family: 'flamalight', Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        line-height: 26px;
+        word-wrap: normal;
+        color: #29292b;
+    }
+.about-main-text{
+	margin-top: 50px;
+}
+    .about-main-text p{
+        padding-top:0px;
+        padding-left: 100px;
+        font-family: 'flamabasic', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+		
+    }
+
+.aboutRow .row{
+    max-width: 50rem !important;
+}
+
+    
+    /* -- below two col two row wrapper -- */
+    
+
+    .wf-moreAboutPattern {
+            position: relative;
+            top: -55px;
+    }
+
+        .wf-pNewsTwoCol {
+            margin-bottom: 5px;
+            margin-left: -2px;
+            margin-right: -2px;
+        }
+
+
+
+        .wf-pNewsBlock h3{
+            font-size: 14px;
+            font-family: 'flamamedium', Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            
+        }
+
+
+
+/* -- Corporate governance page -- */
+
+.corpGov-body {
+    width: 650px;
+}
+
+.corpGov-body .about-intro-text {
+    width: 560px !important;
+}
+
+.cg-st-download {
+    background: #fbfbfb;
+    padding: 20px;
+    height: 220px;
+    position: relative;
+	word-wrap: break-word;
+}
+.cg-st-download:hover .pdf-downloadBtn{
+    background-position:  0 0;
+}
+.pdf-downloadBtn{
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    width: 34px;
+    height: 34px;
+    z-index: 3;
+    font:0/0 normal;
+    background: url(../images/download_button_about.png) no-repeat 0 -35px;
+	text-indent:-99999px;
+   
+    
+}
+
+		
+
+    .cg-st-download span{
+    font-family: 'flamabasic', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #29292b;
+        
+    }
+	
+	.dnld-block { color:#29292b !important }
+
+
+    /*-- download block starts --*/
+
+    .first-download, .second-download, .third-download {
+        padding: 32px 0 50px;
+    }
+
+    .first-download {
+        background: #f2f2f2;
+
+    }
+    .second-download {
+        background: #e5e5e5;
+    }
+    .third-download {
+        background: #d9d9d9;
+                    margin-bottom: -25px;
+
+    }
+
+        /*download centre blocks*/
+        .first-download-block, .second-download-block, .third-download-block{
+            margin: 0 auto;
+            max-width: 50rem;
+        }
+    .wf-moreAboutPattern .wf-card-body, .sust-perform-block .wf-card-body{
+        height: 104px;
+    }
+
+   
+.mb-scroll-top{
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    margin-left: -40px;
+    width: 83px;
+    height: 84px;
+
+}
+.about-intro-text h1{
+    font-family: 'flamamedium', Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+	color:#29292b !important;
+}
+.download-expandable-row .cg-st-download:hover{
+    background-color: #fafafa;
+}
+.cg-st-download:after {
+    position: absolute;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 7px solid transparent;
+}
+.cg-st-download:hover:after {
+    border: 7px solid #000000;
+}
+.secondary-title-text{
+    font-family: 'flamamedium', Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.download-expandable-row{
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+    margin-bottom: 20px;
+}
+.download-expandable-row .column:last-child:not(:first-child), .download-expandable-row .columns:last-child:not(:first-child){
+    float:left !important;
+}
+.download-expandable-row .columns, .download-expandable-row .column{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin: 0 0 14px 0;
+}
+
+
+
+.first-download .cg-st-download h3 {
+			width: auto !important;
+		}
+	.second-download .cg-st-downloa h3{
+		width:auto !important;
+	}
+	
+	 .third-download .cg-st-download h3{
+		width:auto !important;
+	}
+	
+	
+    .cg-st-download h3{
+    font-family: 'flamamedium', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    display: block;
+    width: 125px;
+    margin-bottom: 0;
+	
+
+    }
+
+
+
+
+/*sustainability page*/
+.sustSlider {
+    background: #f2f2f2;
+    padding-top: 30px; 
+}
+
+.sustSlider h1, .heading_title-small {
+    font-family: 'flamamedium';
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom:28px;
+	color:#29292b !important;
+}
+.wf-sustSlider{
+    max-width: 50rem;
+    margin: 0 auto;
+}
+ .sustPerformance-desc {
+	 max-width:50rem;
+	 margin: 40px auto 0;
+ }
+.sustPerformance-desc p{
+        font-family: 'flamabasic', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 100px;
+		    color: #29292b;
+
+}
+.sustainability-cm-panel{
+    padding: 30px 0px 60px 0px;
+}
+.foot-text-special{
+    font-family: 'flamabasic';
+	padding-top: 24px;
+	    color: #29292b;
+
+	
+}
+.foot-text-special a{
+    color: #29292b;
+    text-decoration: underline;
+    font-family: 'flamamedium';
+}
+.sustReport-section{
+    background-color: #ccc;
+}
+.wf-sustSlider .wf-innerslide{
+       position: relative;
+}
+
+.deeper-menuTitle a{
+	color: #fff;
+}
+.pages_deep .wf-mobileHeader.slicknav_black .deep-logo-branding{
+  display: none;
+}
+.pages_deep .sust-perform-block .wf-pNewsTwoCol__col .wf-card-block .wf-card-body-headings h2, .pages_deep .wf-moreAboutPattern .wf-pNewsTwoCol .wf-card-block .wf-card-body-headings h2{
+  margin-bottom: 0px; 
+}
+.pages_deep .sust-top-content, .corp-top-content{
+    padding: 30px 60px 80px 40px;
+}
+.sustReport-section .secondary-title-text{
+    margin-bottom: 30px;
+    font-size: 14px;
+	color:#29292b !important
+}
+.about-breadcrumb .home-breadcrumb{
+    padding-left: 0 !important;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+	.about-body{
+		width: 950px !important;
+	}
+}

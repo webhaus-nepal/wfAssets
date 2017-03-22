@@ -1,0 +1,819 @@
+/*--Westfield CSS. All classes use prefix 'wf-*' for the Westfield brand
+purpose. Please nest the CSS classes according to the HTML code and please
+nest the documentation/comment section accordingly as well --*/
+
+
+
+/*-- All the defaults need to be killed here. --*/
+
+
+@font-face {
+    font-family: 'flamamedium';
+    src: url('flama-medium-webfont.woff2') format('woff2'),
+         url('flama-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'flamabasic';
+    src: url('flama-basic-webfont.woff2') format('woff2'),
+         url('flama-basic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  border: 15px solid #cccccc !important;
+  height: auto !important;
+  background: #cccccc url(../images/bg-pattern.png) repeat-y;
+}
+
+ol,ul{
+	margin-left: 0 !important
+}
+
+ul li, li{
+	list-style-type: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #ffffff;
+    background: red;
+}
+
+::selection {
+    color: #ffffff;
+    background: red;
+}
+
+
+
+
+/*-- Mega header block. This Global mega header consists of top navigation,
+mega navigation, main carousel, stock ticker etc. --*/
+.wf-megaHeader{
+
+position: relative;
+
+}
+
+
+
+/*-- top nav block ---*/
+.vg-topNav{
+text-align:right;
+margin-bottom:10px;
+
+}
+.vg-topNav .vg-topNav__link{
+	display: inline-block;
+    text-align: left;
+}
+/*-----Krishna added css for mega menu -------*/
+/*.vg-topNav__link li{
+	padding:0 8px;
+}*/
+.vg-topNav__link > li{
+	padding:0 8px;
+}
+/*-----Krishna added css for mega menu -------*/
+/*.vg-topNav__link li:first-child {
+	padding:0 0 0 8px;
+
+}*/
+.vg-topNav__link li:first-child {
+	padding:0;
+
+}
+
+.vg-topNav__link li:first-child a{
+	color: #fff;
+	/*background: url(../images/search_icon.png) no-repeat right top;*/
+}
+
+.vg-topNav__link li:first-child img{
+	padding: 0 0 0 5px;
+}
+/*-----Krishna added css for mega menu -------*/
+/*.vg-topNav__link a{
+	font-size: 12px;
+  font-family: 'flamabasic', 'roboto', helvetica;
+	padding: 0 !important;
+	margin: 0 !important;
+	text-transform: uppercase;
+	color: #ffffff;
+}*/
+.vg-topNav__link > li > a{
+	font-size: 12px;
+  font-family: 'flamabasic', 'roboto', helvetica;
+	padding: 0;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+
+.vg-bottomNav {
+    text-align: right;
+}
+.vg-bottomNav .menu-wrapper{
+	display: inline-block;
+    text-align: left;	
+}
+
+/*-- Slider container and other things--*/
+.homeSlideImg{
+  position: relative;
+}
+
+.overlay-img {
+  position: absolute;
+  z-index: 94;
+  width: 100%;
+  height: 100%;
+  background: url(../images/overlayimg.png) repeat;
+}
+
+
+/*16 february chandan */
+.explore-button{
+  position: absolute;
+  z-index: 96;
+  width: 60px;
+  height: 40px;
+  left: 50%;
+  bottom: 40px;
+}
+
+/*16 february chandan */
+
+.leftLogoBlock {
+  position: absolute;
+   z-index: 99;
+  font-family: 'flamamedium', 'roboto', helvetica;
+}
+
+.leftLogoBlock p{
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.rightLogoBlock {
+  position: absolute;
+  right: 60px;
+  bottom: 44px;
+  width: 150px;
+  text-align: right;
+z-index: 99;
+}
+.rightLogoBlock img{
+  display: block;
+  float: right;
+  clear: right;
+
+}
+
+.rightLogoBlock p{
+  display: block;
+  color: #ffffff;
+  font-family: 'flamamedium';
+  font-size: 14px;
+  clear: both;
+  margin-top: 10px;
+
+}
+
+
+/*Kshitiz's CSS*/
+.homepager-block
+{
+  position: absolute;
+  right: 40px;
+  bottom: 62px;
+  z-index:99999;
+}
+.homepager-block img
+{
+  height: 10px;
+  width: 11px;
+}
+/*End of Kshitiz's CSS*/
+
+
+/*-- White background section that consists of About slider and News slider --*/
+
+.wf-whiteExpand{
+	background: #ffffff;
+	padding:0 0 100px 0;
+  margin-top: -65px;
+}
+
+	.wf-aboutSlider {
+		margin: 53px 0 0 0;
+    height: 440px;
+    text-align: center;
+    color: #cccccc;
+    position: relative;
+	}
+  .wf-aboutCaroWrapper {
+    height: 440px;
+    width: 100%;
+    padding-top: 130px;
+
+
+  }
+
+  .about-bgCol1{
+    background: rgba(0,0,0, 0.9) url(../images/block-bg-pattern.png) repeat;
+
+  }
+  .about-bgCol2{
+    background: rgba(80,2,11, 0.9) url(../images/block-bg-pattern.png) repeat;
+
+  }.about-bgCol3{
+    background: rgba(2,80,35, 0.9) url(../images/block-bg-pattern.png) repeat;
+
+  }.about-bgCol4{
+    background: rgba(66,2,80, 0.9) url(../images/block-bg-pattern.png) repeat;
+
+  }
+    .wf-aboutSlider h1{
+      font-family: 'flamamedium', 'roboto', helvetica;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .wf-aboutSlider p{
+      font-family: 'flamabasic', 'roboto', helvetica;
+      font-size: 32px;
+      line-height: 35px;
+      margin: 0 auto;
+      width: 630px;
+      padding-bottom: 80px;
+    }
+    .wf-aboutSlider .findButton{
+      border: 1px solid #cccccc;
+      background:none transparent;
+      color: #ccc;
+      text-decoration: none;
+
+      width: 165px;
+      padding: 14px 35px;
+      text-align: center;
+      margin: 0 auto 0 !important;
+      font-family: 'flamamedium', 'roboto', 'Helvetica Neue';
+      text-transform: uppercase;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+
+
+	.wf-newsSlider{
+		margin:53px 0 0 0;
+    overflow: hidden;
+    height: 440px;
+	}
+
+  .wf-slideText{
+    width: 700px !important;
+    height: 440px !important;
+
+  }
+
+  .wf-slideImage{
+    width: 500px !important;
+    height: 440px !important;
+
+  }
+
+  .bg-changer1{
+    background: red;
+  }
+
+
+    .bg-changer2{
+      background: blue;
+    }
+
+
+      .bg-changer3{
+        background: orange;
+      }
+
+
+        .bg-changer4{
+          background: green;
+        }
+
+  .wf-slideImage img{
+  }
+
+
+  .bxslider3, .bxslider4{
+    height: 440px !important
+  }
+
+
+.news-parent {
+  padding-top: 134px;
+  padding-left: 100px;
+  position: relative;
+}
+
+.news-parent h2{
+  font-family: 'flamamedium';
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.news-parent p{
+  font-family: 'flamamedium';
+  font-size: 28px;
+  padding-top: 25px;
+  padding-bottom: 57px;
+  width: 420px;
+  line-height: 30px;
+  color: #29292b;
+}
+
+.news-parent .findButton2{
+  border: 1px solid #ffffff;
+  background:none transparent;
+  color: #ffffff;
+  text-decoration: none;
+
+  width: 165px;
+  padding: 14px 35px;
+  text-align: center;
+  margin: 0 auto 0 !important;
+  font-family: 'flamamedium', 'roboto', 'Helvetica Neue';
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+/*Kshitiz's added CSS*/
+.aboutpager-block{
+  position: absolute;
+  left: 38px;
+  bottom: 50%;
+}
+.aboutpager-block img{
+  height: 8px;
+  width: 11px;
+}
+.news-parent-block  {
+  position: absolute;
+}
+.news-parent-block > a{
+  display: block;
+  margin:1rem 0;
+}
+/*End of Kshitiz's added CSS*/
+/*-- Grey pattern prefooter section that consists of two/three column row(s) that overflows
+or overlaps on both white bleeding section and patterned section --*/
+
+.wf-pNewsExpand{
+	padding: 0 0 0;
+}
+
+.wf-pNewsPattern{
+
+	/*min-height: 427px; -testing purpose. remove when test successful after content expand-*/
+}
+
+
+	.wf-pNewsBlock {
+		position: relative; /*-for pushing the block to overlap. Mandatory.-*/
+		top: -45px;
+	}
+
+
+		.wf-pNewsThreeCol{ /*-Three column row.-*/
+
+
+		}
+			.wf-pNewsThreeCol__col{
+				width: 396px;
+				margin: 0 4px 53px auto;
+			}
+	
+
+		.wf-pNewsTwoCol{ /*-Two column row-*/
+		}
+
+			.wf-pNewsTwoCol__col{
+				width: 597px;
+			}
+
+
+/*-- Global footer block. It consists of footer links, logo and stock ticker --*/
+.wf-footExpand {
+	background: #29292b;
+	color: #cccccc;
+
+}
+
+	.wf-footerBlock {
+		padding: 65px 0 80px;
+		position: relative;
+	}
+
+	.wf-footerBlock a{
+		color: #cccccc;
+		text-decoration: none;
+		border-bottom: 2px solid #29292b;
+	}
+
+	.wf-footerBlock a:hover{
+		color: #ffffff;
+		text-decoration: none;
+		border-bottom: 2px solid #e23120;
+	}
+
+	.wf-footLogoGroup{
+		width: 330px;
+	}
+		.wf-footLogoGroup img{
+			display: block;
+			margin-bottom: 20px
+		}
+
+	.wf-footStock {
+		width: 130px;
+	}
+
+	.wf-footLinkBlock{
+		margin: 0 240px 0 340px;
+		text-transform: uppercase;
+		overflow: hidden;
+	}
+
+		.wf-footLinkBlock .columns {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+
+		.wf-footStock{
+			text-align: right;
+			text-transform: uppercase;
+		}
+			.wf-footStockBlock__text{
+				display: block;
+			}
+
+			.wf-footStockBlock__share {
+				font-family: 'flamamedium', 'Helvetica Neue', 'Roboto', Arial;
+				font-size: 26px;
+				display: block;
+			}
+
+		.wf-footLinkBlock ul li{
+			line-height: 35px;
+		}
+		.wf-footMainLink a {
+			font-family: 'flamamedium', 'Helvetica Neue', 'Roboto', Arial;
+			font-size: 14px;
+		}
+
+		.wf-footOtherLink a, .wf-copyRight, .wf-footStockBlock__text{
+			font-family: 'flamabasic', 'Helvetica Neue', 'Roboto', Arial;
+			font-size: 12px;
+		}
+
+		.wf-copyRight{
+			margin-top: 35px;
+		}
+
+
+
+
+
+
+
+
+
+/*-----Krishna added css -------*/
+
+.mmWrapper{
+
+background: #29292b;
+height: 110px;
+
+}
+.mega-menu-container{
+  display:-webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  color:#fff;
+  font-family: 'flamabasic', 'Helvetica Neue', 'Roboto', Arial;
+}
+.mega-menu-container .col-sep.left-primary-col{
+  flex:1 1 0;
+  padding-right:2rem;
+  padding-top:45px;
+}
+.mega-menu-container .col-sep{
+  flex:1 1 0;
+}
+.right-deeper-links{
+  display:-webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap; 
+}
+.right-deeper-links > ul {
+    flex: 1 1 0;
+  padding-right:2rem !important;
+}
+.right-deeper-links > ul:last-child{
+  padding-right:0;
+}
+.mega-menu-container .col-sep.left-primary-col p{
+  font-size:1rem;
+  color: #f4f4f5;
+  font-family: 'flamamedium', 'Helvetica Neue', 'Roboto', Arial;
+
+}
+.mega-menu-container .col-sep.left-primary-col h5{
+  border:none;
+}
+.mega-menu-container .col-sep:last-child, .deeper-links-row .deeper-links-body > ul{
+  padding-right:0;
+}
+.vg-topNav__link > li > a{
+  position:relative;
+  z-index: 99;
+  animation-name: slideDown;
+  animation-duration: 1s;
+}
+.vg-topNav__link > li > a:after{
+  position:absolute;
+  content:'';
+  height:2px;
+  width:100%;
+  background-color:transparent;
+  bottom:-5px;
+  left:0;
+}
+.vg-topNav__link > li > a:focus:after, .vg-topNav__link > li > a:hover:after{
+  background-color:#e13022;
+}
+.deeper-links-row{
+  display:table;
+  table-layout:fixed;
+  width:100%;
+}
+.right-deeper-links .deeper-menuTitle{
+  color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'flamamedium', 'roboto', helvetica;
+    position: relative;
+  padding-left:20px;
+  width:100%;
+  margin-bottom:25px;
+}
+.right-deeper-links .deeper-menuTitle:before{
+  position:absolute;
+  content:'';
+  left:0;
+  top:2px;
+  color:#e13022;
+  width:15px;
+  height:15px;
+  background-image:url(../images/menu-deeper-arrow.png);
+}
+.deeper-links-row .deeper-links-body {
+  display:table-row;
+}
+.deeper-links-row .deeper-links-body > ul{
+  display:table-cell;
+  padding-right:2rem;
+}
+.vg-topNav .mega-menu.menu-offset-fix{
+  top:110px;
+}
+.menu-news-list p{
+  font-size: 13px;
+    font-weight: normal;
+    font-family: 'flamabasic', 'roboto', helvetica; 
+}
+.menu-news-list .news-date {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'flamamedium', 'roboto', helvetica;
+    width: 100%;
+}
+.lineButton {
+    border: 1px solid #ffffff !important;
+    background: none transparent;
+    color: #ffffff;
+    text-decoration: none;
+    display:inline-block !important;
+    padding:10px 35px !important;
+    text-align: center;
+    font-family: 'flamamedium', 'roboto', 'Helvetica Neue';
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+}
+.lineButton:focus:after, .lineButton:hover:after {
+    background-color:transparent;
+}
+.menu-small-form form p{
+  margin-bottom:0.5rem;
+}
+.menu-small-form input, .menu-small-form select{
+    background-color: #525253 !important;
+    height: 2rem;
+    font-size: 13px;
+    padding: 1rem !important;
+    color: #c3c3c3;
+}
+.slicknav_menu {
+  display:none;
+}
+.slicknav_menu .slicknav_icon-bar:last-child{
+  width:70%;
+}
+.slicknav_btn:hover .slicknav_icon-bar:last-child{
+  width:100%;
+}
+.slicknav_nav .slicknav_parent > a, .slicknav_nav a strong {
+    text-decoration: none;
+    line-height: 30px;
+    display: block;
+    font-family: 'flamamedium', 'roboto', helvetica;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.slicknav_nav .slicknav_arrow {
+    float: right;
+  width: 18px;
+    height: 18px;
+    background-size: 14px;
+    background-repeat: no-repeat;
+}
+.slicknav_collapsed .slicknav_arrow{
+    background-image: url(../images/mob-acc-arrow_top.png);
+}
+.slicknav_open .slicknav_arrow{
+    background-image: url(../images/mob-acc-arrow_bottom.png);
+}
+.slicknav_nav a{
+    color: #f4f4f5;
+    line-height: 22px;
+    font-size: 12px;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 8px;
+    border-bottom: 1px solid #29292b;
+    font-family: 'flamabasic', 'roboto', helvetica;
+}
+.wf-megaHeader{
+  height: 105px;
+    z-index: 1000000;
+    top: 0;
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -pie-transition-duration: 0.8s;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px 0 40px;
+    border: 15px solid #ccc;
+    border-bottom: none;
+}
+.wf-megaHeader.header-fix {
+  background-color:#fff;
+  border-bottom: 1px solid #ccc;
+}
+.wf-mobileHeader{
+  height: 46px;
+    z-index: 1000000;
+    top: 0;
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -pie-transition-duration: 0.8s;
+    position: fixed;
+    left: 0;
+    width: 100%;  
+}
+.wf-mobileHeader.header-fix, .wf-mobileHeader.header-fix .slicknav_menu, .wf-mobileHeader .slicknav_nav{
+  background-color:#29292b;
+}
+.wf-megaHeader.header-fix .vg-topNav__link > li > a, .wf-megaHeader.header-fix .nav > li > a, .wf-megaHeader.header-fix .vg-topNav__link li:first-child a{
+  color:#29292b;
+}
+.wf-megaHeader.header-fix .nav > li{
+  border-left: 2px solid #29292b;
+}
+.wf-megaHeader.header-fix .nav > li:first-child {
+    border-left: none;
+}
+.lg-logo-branding{
+    max-width: 286px;
+    display: inline-block;
+  position: absolute;
+    left: 40px;
+    top: 35px;
+}
+.lg-logo-branding .logo-svg{
+  max-width:100%;
+}
+.magnifier-icon{
+  width:14px;
+  margin-left:4px;
+}
+.vg-bottomNav .nav li[role="menuitem"]:last-child{
+  padding-right:0;
+}
+    
+
+
+/* SLIDER PAGER CSS */
+
+/* TOP SLIDER */
+.sc .bx-controls {
+    position: absolute;
+    right: 45px;
+    bottom: 88px;
+}
+
+/* ABOUT SLIDER */
+/*-----Krishna updated css -------*/
+.wf-aboutSlider .bx-controls {
+    position: absolute;
+}
+/*-----Krishna updated css -------*/
+.sc{
+	position:relative;
+}
+.sc .bx-wrapper .bx-pager.bx-default-pager a, .wf-aboutSlider .bx-wrapper .bx-pager.bx-default-pager a{
+    background: rgba(255, 255, 255, 0.4);
+    display: block;
+    width: 10px;
+    height:5px;
+    margin:0 0 5px;
+    -moz-border-radius:0px !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+.sc .bx-wrapper .bx-pager{
+	font-size:0;
+}
+.sc  .bx-wrapper .bx-pager.bx-default-pager a:hover, .sc .bx-wrapper .bx-pager.bx-default-pager a.active, .wf-aboutSlider .bx-wrapper .bx-pager.bx-default-pager a:hover, .wf-aboutSlider .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background:rgb(255,255,255);
+}
+.sc .arrow_scrollDown{
+	position: absolute;
+    bottom: 45px;
+    width: 100%;
+    text-align: center;
+	    z-index: 100;
+}
+.sc .arrow_scrollDown a{
+	display:inline-block;
+	font-size: 12px;
+    font-family: 'flamabasic', 'roboto', helvetica;
+    padding: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.sc .arrow_scrollDown a span{
+	display: block;
+    width: 22px;
+    height: 20px;
+    background: url(../images/scroll-downArrow.png) no-repeat;
+    margin: 0 auto;
+	font:0/0 normal;
+}
+.lftLogoBlock-textBody{
+    width: 290px;
+    display: inline-block;
+    text-align: center;
+}
+.wf-aboutSlider .bx-wrapper .bx-pager {
+    font-size: 0;
+}
+.wf-megaHeader.header-fix .vg-bottomNav.hover-state .nav>li > a, .wf-megaHeader.header-fix .vg-topNav.hover-state .menu.align-right>li> a{
+	color: #ffffff;
+}
+

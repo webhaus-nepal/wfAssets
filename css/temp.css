@@ -1,0 +1,66 @@
+
+
+@media screen and (min-width:25em) {
+    body::after {
+        content: "small";
+        display: none;
+    }
+}
+
+@media screen and (min-width:35em) {
+    body::after {
+        content: "medium";
+        display: none;
+    }
+}
+
+@media screen and (min-width:65em) {
+    body::after {
+        content: "large";
+        display: none;
+    }
+}
+
+#deviceTypeIndicator{
+    font-size: 75px;
+}
+
+.sc{
+    opacity: 0;
+}
+
+
+.wf-news-container{
+    width: 700px;
+}
+
+.img-container{
+    width: 500px;
+    position: relative;
+	height: 440px;
+}
+
+.img-container img{
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.news-parent{
+    overflow: hidden;
+    height: 440px;
+}
+ .image-parent{
+    overflow: hidden;
+    height: 440px;
+}
+.newsImageAnimate {
+    animation-name: scrollUp;
+    animation-duration: 2s;
+}
+
+
+@keyframes scrollUp {
+    from {top: 75px;opacity: 0}
+    to {top: 0px;opacity: 1}
+}
