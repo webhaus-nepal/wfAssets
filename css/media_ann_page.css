@@ -140,7 +140,10 @@ margin-bottom: 26px; color: #29292b;}
     margin-bottom: 58px;
 }
 .wf-calendar__Body.wf-search_body .lineButton__dark{line-height:14px;}
-.wf-calendar__Body.wf-search_body .media-readmoreBtn{bottom:26px;}
+.wf-calendar__Body.wf-search_body .media-readmoreBtn{
+    bottom: 30px;
+    left: 30px;
+}
 .wf-calendar__Body.wf-search_body  .lineButton__dark:hover{  
  border: 3px solid #ffffff  !important;
     color: #ffffff  !important;
